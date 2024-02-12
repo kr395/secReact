@@ -1,6 +1,12 @@
 import "./App.css";
 import UpdateObj from "/updateObjects/UpdateObj.jsx";
+import UpdateArray from "/updateObjects/UpdateArray.jsx";
+import TodoList from "/TodoList/TodoList.jsx";
 
 export default function App() {
-  return <UpdateObj />;
+  return (
+   // <UpdateObj />
+    // <UpdateArray />
+    <TodoList />
+         );
 }
