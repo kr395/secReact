@@ -23,23 +23,43 @@ export default function TodoList() {
   return (
     <div className="container">
       <div className="hero">
-        <h4 id="introTxt">Let's See....</h4>
-        <h1 id="wtd">What TODO</h1>
-        <hr id="hr"></hr>
+        <div id="topLeft">
+          <i id="loveIcon" className="bi bi-heart-fill"></i>
+        </div>
+        <div id="mid">
+          <h4 id="introTxt">Let's See....</h4>
+          <h2>What</h2>
+          <h1 id="wtd">TODO</h1>
+        </div>
+
+        <div id="topRight">
+          <i id="userIcon" className="bi bi-person-fill"></i>
+        </div>
       </div>
+      <div id="hr"></div>
+     
       <div id="head">
         <div id="addDiv">
           <input id="inTaskName" type="text" placeholder="What to do?" />
-          <input id="inDate" type="date" placeholder="What to do?" />
-          <input id="inStartTime" type="time" placeholder="What to do?" />
-          <input id="inEndTime" type="time" placeholder="What to do?" />
+          <input id="inDate" type="date" />
+          <input id="inStartTime" type="time" />
+          <input id="inEndTime" type="time" />
+          inp
           <button id="reset">Reset</button>
-          <input id="addTask" type="button" value="Add Task" />
+          <button id="reset">Add Task</button>
+          
         </div>
       </div>
+      
+      {/* Body */}
+      
       <div id="body">
-        <div id="Task">
-          <h3>Task Details</h3>
+         <div id="hr"></div>
+        
+      <h3>Task Details</h3>
+         <div id="hr"></div>
+        
+        <div id="task">
           <p>#</p>
           <p>Task Name</p>
           <p>Date</p>
@@ -51,6 +71,9 @@ export default function TodoList() {
           <p>Star</p>
         </div>
       </div>
+      
+      {/* Footer */}
+      
       <div id="footer">
         <p>End of the Page</p>
       </div>
