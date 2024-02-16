@@ -1,27 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Body(){
-  const [taskObj, setTaskObj] = useState(0);
-  const [todos, setTodos] = useState([
-    {
-      taskId: 1,
-      taskName: "Learn React",
-      status: [
-        "Pending",
-        "In Progress",
-        "Completed",
-        "Cancelled",
-        "Deleted",
-        "On Hold",
-      ],
-      date: " ",
-      startTime: "",
-      endTime: "",
-      isStar: false,
-    },
-  ]);
-  return(
+export default function Body() {
+  return (
     <>
       <div id="body">
         <div id="hr2"></div>
@@ -30,12 +11,12 @@ export default function Body(){
         <div id="hr"></div>
 
         <div id="task">
-          <p>{todos[taskObj].taskId}</p>
-          <p>{todos[taskObj].taskName}</p>
-          <p>{todos[taskObj].date}</p>
-          <p>{todos[taskObj].startTime}</p>
-          <p>{todos[taskObj].endTime}</p>
-          <p>{todos[taskObj].status[0]}</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
 
           <button className="btns" id="edit">
             <i id="btnIcon" className="bi bi-pencil-fill"></i>
@@ -49,8 +30,5 @@ export default function Body(){
         </div>
       </div>
     </>
-    
-  )
-
-  
+  );
 }
